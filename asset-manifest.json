@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/libraryForJetstyle/static/css/main.09465950.css",
+    "main.js": "/libraryForJetstyle/static/js/main.d8aee5f9.js",
+    "index.html": "/libraryForJetstyle/index.html",
+    "main.09465950.css.map": "/libraryForJetstyle/static/css/main.09465950.css.map",
+    "main.d8aee5f9.js.map": "/libraryForJetstyle/static/js/main.d8aee5f9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09465950.css",
+    "static/js/main.d8aee5f9.js"
+  ]
+}
