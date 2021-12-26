@@ -8,7 +8,7 @@ function BookList(props) {
 
     const listItems = library.map((val) => {
         
-        return <BookCard key={val.id} title={val.title} author={val.author} id={val.id}
+        return <BookCard key={val.id} title={val.title} author={val.author} id={val.id} cover={val.cover}
             setLibrary={setLibrary}/>
     })
     

@@ -40,10 +40,18 @@ const handleDelete = () => {
     props.setLibrary(library);
     localStorage.setItem('library', JSON.stringify(library));
 }
+function Img() {
+    console.log(props.cover)
+    if (props.cover.base64URL){
+        return <img className="book-card__img" src={props.cover.base64URL} alt="book cover"></img>
+    }else{
+        return <div className="book-card__img">img</div>
+    }
+}
 
     return (
         <div className="book-card">
-            <div className="book-card__img">img</div>
+            <Img/>
             <div className="book-card__main">
                 <div className="book-card__item">
                     <TextField text={props.title} id={props.id} type='title' setLibrary={props.setLibrary}/>

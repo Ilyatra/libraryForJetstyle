@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import './css.css';
 
 function Modal(props) {
@@ -20,14 +19,13 @@ function Modal(props) {
                     </label>
                     <label className="modal__label">
                         Upload cover
-                        <input type="file" name="cover" onChange={(e) => props.setCover(e.target.value)}
+                        <input type="file" name="cover" onChange={props.handleFileInputChange}
                             className="modal__input"/>
                     </label>
                     <div className="modal__button-wrapper">
-                        <input type="submit" value="submit" onClick={props.handleSubmit}/>
+                        <input type="submit" value="submit" onClick={props.handleSubmit} />
                         <button onClick={(e) => props.setTitle(e.target.value)}>cancel</button>
-                    </div>
-                    
+                    </div>   
                 </form>
             </div>
         )
